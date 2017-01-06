@@ -14,6 +14,7 @@
       height:100%;
     }
   </style>
+
 <title>index2</title>
 /*自傳*/
 <style>
@@ -22,6 +23,7 @@
     background-color: #eee;
     position: relative;
   }
+
   #wrapper{
     background-color: #5599FF;
     max-width: 960px;
@@ -90,6 +92,17 @@ $('body').scrollspy({ target: '#navbar-example' })
 });
 </script>
 /*自傳*/
+
+<script type="text/javascript">
+  $(function(){
+    $("ul>li>a").click(function(event) {
+      event.preventDefault();
+      var ref = $(this).attr("href");
+      $("body,html").animate({scrollTop: $(ref).offset().top },1000);
+    });
+    $('body').scrollspy({target: '#navbar-example'})
+  });
+</script>
 </head>
 
 
