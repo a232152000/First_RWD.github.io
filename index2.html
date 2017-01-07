@@ -26,37 +26,34 @@
 
   #wrapper{
     background-color: #5599FF;
-    max-width: 960px;
+  /*  max-width: 960px;*/
     min-height: 600px;
+    height: auto;
     padding: 0;
   }
   #side{
-    background-color: 	#00DD00;
-    height: 100%;
+    background-color: 	#B088FF;
+    min-height: 600px;
     padding: 0;
+    height: auto;
   }
-  #main {
-      background-color: #fff;
-      min-height: 600px;
-      padding: 0 50px 50px;
-    }
+  #side2{
+    background-color: #5599FF;
+    min-height: 100%;
+    padding: 0;
+    height: auto;
+  }
+
   .profile{
 
     text-align: center;
+    background-color: 	#00DD00;
   }
 
   .profile > img{
     width: 150px;
     height: 150px;
   }
-  .login{
-    background-color: #FFAA33;
-    width: 400px;
-    height: 200px;
-    border: 1px solid #000;
-    margin:  0 auto;
-  }
-
 
 .font-white{
   color: #FFFFFF;
@@ -65,9 +62,11 @@
 .contact{
   background-color: 	#B088FF;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   padding: 2px 30px;
-  height:360px;
+  min-height: 100%;
+  height: auto;
+  /*height:360px;*/
 }
 
 #resume{
@@ -82,7 +81,9 @@
   text-align: center;
   font-size: 18px;
   padding: 2px 30px;
-  height:300px;
+  min-height: 100%;
+  height: auto;
+  /*height:300px;*/
 }
 
 </style>
@@ -139,7 +140,7 @@ $('body').scrollspy({ target: '#navbar-example' })
   <img class="img-responsive" src="https://lh3.googleusercontent.com/XayhCOAmTtHBU5hmu4zExgfumPvU0IKXweETwGuIO9yzJsmo8XhjiOhVNHUvu9RjsA">
 </div>
 <div id="about" class="resume">
-  <div class="row">
+  <div  class="row" >
     <div id="wrapper">
     <div id="side" class="col-sm-4">
         <div class="profile">
@@ -149,15 +150,23 @@ $('body').scrollspy({ target: '#navbar-example' })
         </div>
         <div class="contact">
         <ui>
-          <li>email:a232152000@gmail.com</li>
+          <h2 class="font-white">基本資料</h2>
+          <br>
+          <li>mail:a232152000@gmail.com</li>
+          <br>
+          <li>地址:台灣都是我的家</li>
+          <br>
           <li>phone:0961302939</li>
+          <br>
           <li>github:a232152000</li>
+          <br>
           <li>FB:a232152000</li>
+
         </ui>
         </div>
 
     </div>
-            <div id="side" class="col-sm-8">
+            <div id="side2" class="col-sm-8 ">
                 <div class="contact2">
                   <h2 class="font-white">個人簡介</h2>
                   <h4 class="font-white">柴犬樸實而雅致，它靈巧機敏，色澤如木柴，曾是穿梭于深山林間的狩獵好手，故稱之為柴犬。
